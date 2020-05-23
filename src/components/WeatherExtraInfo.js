@@ -1,8 +1,8 @@
 import React from 'react';
 
-const WeatherExtraInfo = ({ humidity, wind }) => (
+const WeatherExtraInfo = ({ humidity, wind }) => ( // Template string 
     <div>
-        <span>{`${humidity} % | `}</span>
+        <span>{`${humidity} % | `}</span>  
         <span>{`${wind} wind`}</span>
     </div>
 );
