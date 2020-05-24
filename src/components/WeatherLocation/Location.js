@@ -1,8 +1,9 @@
 import React from 'react';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
+import './styles.css';
 
 const Location = ({ city }) => (    // Destructuring
-    <div>
+    <div className='LocationCont' >
         <h1>
             {city}
         </h1>
