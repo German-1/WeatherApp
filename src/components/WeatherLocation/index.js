@@ -27,7 +27,6 @@ class WeatherLocation extends Component {
 
     handleUpdateClick = () => {
         this.setState({
-            city: 'Buenos Aires',
             data: data2,
         });
         console.log("actualizado");
