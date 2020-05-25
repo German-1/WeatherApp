@@ -10,9 +10,10 @@ const getWeatherState = weather => {
 }
 
 const transformWeather = weather_data => {
+    const weather = '';
     const { humidity, temp } = weather_data.main;
     const { speed } = weather_data.wind;
-    const weatherState = getWeatherState(this.weather);
+    const weatherState = getWeatherState(weather);
     const temperature = getTemp(temp);
     const data = {
         humidity,
