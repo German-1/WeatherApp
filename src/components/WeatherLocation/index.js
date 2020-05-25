@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Location from './Location';
 import WeatherData from './WeatherData';
 import transformWeather from './../../services/transformWeather';
-import { SUN } from './../../constants/weathers';
 import './styles.css';
 
 const locatiton = "Buenos Aires,ar";
@@ -11,18 +10,11 @@ const api_key = "fae4953631559c2eaaa68bcb1b7ce531";
 
 const api_weather = `http://api.openweathermap.org/data/2.5/weather?q=${locatiton}&appid=${api_key}`;
 
-const data1 = {
-    temperature: 20,
-    weatherState: SUN,
-    humidity: 10,
-    wind: '10 m/s',
-};
-
 class WeatherLocation extends Component {
 
     state = {
         city: 'Buenos Aires',
-        data: data1,
+        data: null,
     };
 
     handleUpdateClick = () => {
@@ -45,8 +37,7 @@ class WeatherLocation extends Component {
         return (
             <div className='weatherLocationCont' >
                 <Location city={city} />
-                <WeatherData data={data} />
-                <button onClick={this.handleUpdateClick}>Actualizar</button>
+                {data ? <WeatherData data={data} /> : 'Cargando..'}
             </div>
         );
     }
