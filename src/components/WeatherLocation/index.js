@@ -1,21 +1,20 @@
 import React, { Component } from 'react';
 import Location from './Location';
 import WeatherData from './WeatherData';
-import { SUN, WINDY } from './../../constants/weathers';
+import { SUN } from './../../constants/weathers';
 import './styles.css';
+
+const locatiton = "Buenos Aires,ar";
+
+const api_key = "fae4953631559c2eaaa68bcb1b7ce531";
+
+const api_weather = `http://api.openweathermap.org/data/2.5/weather?q=${locatiton}&appid=${api_key}`;
 
 const data1 = {
     temperature: 20,
     weatherState: SUN,
     humidity: 10,
     wind: '10 m/s',
-};
-
-const data2 = {
-    temperature: 18,
-    weatherState: WINDY,
-    humidity: 5,
-    wind: '19 m/s',
 };
 
 class WeatherLocation extends Component {
@@ -26,9 +25,10 @@ class WeatherLocation extends Component {
     };
 
     handleUpdateClick = () => {
-        this.setState({
-            data: data2,
-        });
+        fetch(api_weather);
+        // this.setState({
+        //     data: data2,
+        // });
         console.log("actualizado");
     }
 
