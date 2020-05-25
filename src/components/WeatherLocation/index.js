@@ -36,7 +36,29 @@ class WeatherLocation extends Component {
         console.log("actualizado");
     }
 
+    //se invoca justo antes de que el montaje ocurra
+    componentWillMount() {
+        console.log("componentWillMount");
+    }
+
+    //se invoca inmediatamente después de que un componente se monte
+    componentDidMount() {
+        console.log("componentDidMount");
+    }
+
+    //se invoca justo antes de renderizar cuando llegan nuevos props o se esta recibiendo el estado
+    componentWillUpdate() {
+        console.log("componentWillUpdate");
+    }
+
+    //se invoca inmediatamente después de que la actualización ocurra
+    componentDidUpdate() {
+        console.log("componentDidUpdate");
+    }
+
+
     render = () => {
+        console.log("render");
         const { city, data } = this.state;
         return (
             <div className='weatherLocationCont' >
