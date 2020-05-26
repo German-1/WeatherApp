@@ -5,7 +5,8 @@ import './App.css';
 
 class App extends Component {
   render() {
-    return (
+    console.log("debuger");
+    return (      
       <MuiThemeProvider>
         <div className="App">
           <WeatherLocation></WeatherLocation>
