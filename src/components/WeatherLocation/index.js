@@ -19,7 +19,7 @@ class WeatherLocation extends Component {
         };
     }
 
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         const { city } = this.state;
         const api_weather = `${url}?q=${city}&appid=${api_key}`;
         fetch(api_weather).then(data => {
