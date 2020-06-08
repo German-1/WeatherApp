@@ -21,37 +21,23 @@ class App extends Component {
   render() {
     return (
       <MuiThemeProvider>
-
         <Grid>
           <Row>
-            <h1>Grid System: xs, sm, md, lg</h1>
+            Título
           </Row>
           <Row>
-            <h5>Las columnas se muestran en la misma fila mientras sumen 12</h5>
-          </Row>
-          <Row>
-            <Col xs={12} sm={6} md={4} lg={3}>
-              <div className='red'></div>
+            <Col xs={12} md={6}>
+              <LocationList
+                cities={cities}
+                onSelectedLocation={this.handleSelectedLocation}
+              >
+              </LocationList>
             </Col>
-            <Col xs={12} sm={6} md={4} lg={3}>
-              <div className='green'></div>
-            </Col>
-            <Col xs={12} sm={6} md={4} lg={3}>
-              <div className='blue'></div>
-            </Col>
-            <Col xs={12} sm={6} md={4} lg={3}>
-              <div className='yellow'></div>
+            <Col xs={12} md={6}>
+              <div className='detail'></div>
             </Col>
           </Row>
         </Grid>
-
-        {/* <div className="App">
-          <LocationList
-            cities={cities}
-            onSelectedLocation={this.handleSelectedLocation}
-          >
-          </LocationList>
-        </div> */}
       </MuiThemeProvider>
     );
   }
