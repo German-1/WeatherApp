@@ -4,6 +4,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Paper from 'material-ui/Paper';
 import AppBar from 'material-ui/AppBar';
 import LocationList from './components/LocationList';
+import ForecastExtended from './components/ForecastExtended';
 import './App.css';
 
 const cities = [
@@ -39,7 +40,9 @@ class App extends Component {
             </Col>
             <Col xs={12} md={6}>
               <Paper zDepth={4}>
-                <div className='detail'></div>
+                <div className='detail'>
+                  <ForecastExtended></ForecastExtended>
+                </div>
               </Paper>
             </Col>
           </Row>
