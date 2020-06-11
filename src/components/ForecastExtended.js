@@ -17,6 +17,9 @@ import './styles.css';
 //     weatherState: 'normal',
 //     wind: 'normal',
 // };
+
+const api_key = "fae4953631559c2eaaa68bcb1b7ce531";
+const url = "http://api.openweathermap.org/data/2.5/forecast";
 class ForecastExtended extends Component {
 
     constructor() {
@@ -25,6 +28,11 @@ class ForecastExtended extends Component {
             forescastData: null,
         }
     }
+
+    componentDidMount() {
+        
+    }
+    
 
     renderForecastItemDays() {
         return 'Render Items';
