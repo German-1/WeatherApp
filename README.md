@@ -112,3 +112,10 @@ Las bases de la heurística son:
 
 ![alt-text](https://github.com/German-1/WeatherApp/blob/master/public/images/ReconciliationSCU.png)
 
+
+### Redux
+
+[Redux](https://es.redux.js.org/) es un contenedor predecible del estado de aplicaciones JavaScript.
+
+Te ayuda a escribir aplicaciones que se comportan de manera consistente, corren en distintos ambientes (cliente, servidor y nativo), y son fáciles de probar. Además de eso, provee una gran experiencia de desarrollo, gracias a edición en vivo combinado con un depurador sobre una línea de tiempo.
+
