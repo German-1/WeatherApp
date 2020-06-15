@@ -100,11 +100,13 @@ Las bases de la heurística son:
 
  3. Recorre lista de elementos hijos comparando por clave
 
-    Estado 1                        Estado 2
-        i.      item1                    i.     item0
-        ii.     item2                    ii.    item1
-        iii.    item3                    iii.   item2
-                                         iv.    item3
+    |Estado 1|Estado2|
+    |--------|-------|
+    |item1   |item0  |
+    |item2   |item1  |
+    |item3   |item2  |
+    |--------|item3  |
+
 
 ## Reconciliation y SCU
 
