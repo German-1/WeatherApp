@@ -68,3 +68,39 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 ![alt-text](https://github.com/German-1/WeatherApp/blob/master/public/React%20JS%2BRedux%2BES6.jpg)
+
+## Virutal DOM
+
+React mantiene una representación del DOM (Document Object Model) de cada elemento, una representación liviana del DOM que se suele denominar Virtual DOM, que le permite comparar estados más eficientemente ya que no tiene necesidad de consultar el DOM real mantenido por el navegador y sólo se basa en objetos  y algoritmos javascript.
+
+## OneWayData Flow
+
+## OneWayData Flow (descendente)
+
+## Reconciliation
+
+Hace un proceso que revisa cambios en los componente en el "DOM Virutal"
+
+Compara (aplicando una heurística) los componente resultantes del nuevo estado con los anteriores, y busca por cambios.
+
+Las bases de la heurística son:
+
+ 1. Tipos de elementos diferentes generan ramas del árbol de componente     diferentes
+
+ 2. El programador puede guiar a la heurística con una clave estable para los elementos "child"
+
+## Reconciliation: ¿ Cuando detecta un cambio?
+ 1. Cambio de tipo de elemento
+
+ 2. Cambio de atributos dentro de elementos del mismo tipo
+
+ 3. Recorre lista de elementos hijos comparando por clave
+
+    Estado 1                        Estado 2
+        i.      item1                    i.     item0
+        ii.     item2                    ii.    item1
+        iii.    item3                    iii.   item2
+                                         iv.    item3
+
+## Reconciliation y SCU
+
