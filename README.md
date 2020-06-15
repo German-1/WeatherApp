@@ -67,7 +67,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-![alt-text](https://github.com/German-1/WeatherApp/blob/master/public/React%20JS%2BRedux%2BES6.jpg)
+![alt-text](https://github.com/German-1/WeatherApp/blob/master/public/images/React%20JS%2BRedux%2BES6.jpg)
 
 ## Virutal DOM
 
@@ -75,7 +75,11 @@ React mantiene una representación del DOM (Document Object Model) de cada eleme
 
 ## OneWayData Flow
 
+![alt-text](https://github.com/German-1/WeatherApp/blob/master/public/images/OneWayDataFlow.png)
+
 ## OneWayData Flow (descendente)
+
+![alt-text](https://github.com/German-1/WeatherApp/blob/master/public/images/OneWayDataFlow(descend).png)
 
 ## Reconciliation
 
@@ -103,4 +107,6 @@ Las bases de la heurística son:
                                          iv.    item3
 
 ## Reconciliation y SCU
+
+![alt-text](https://github.com/German-1/WeatherApp/blob/master/public/images/ReconciliationSCU.png)
 
