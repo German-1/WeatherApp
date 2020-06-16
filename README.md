@@ -125,11 +125,15 @@ Te ayuda a escribir aplicaciones que se comportan de manera consistente, corren 
 
 ## Funcion que retorna funciones
 
+![alt-text](https://github.com/German-1/WeatherApp/blob/master/public/images/Funcionqueretornafunciones.png)
+
 ## Entendiendo el Reducer
+
+![alt-text](https://github.com/German-1/WeatherApp/blob/master/public/images/EntendiendoelReducer.png)
 
 ## Reducers
 
- * Funciones puras:
+ * **Funciones puras**:
  Una función pura es aquella que, dada una misma entrada, siempre regresa el mismo valor de salida y no tiene otro efecto secundario observable. Por ejemplo, consideremos las funciones slice y splice de javascript. ... En la programación funcional, evitamos a funciones como splice que mutan datos.
 
 - No alterar estado
