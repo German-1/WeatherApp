@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Grid, Row, Col } from 'react-flexbox-grid';
+import PropTypes from 'prop-types';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Paper from 'material-ui/Paper';
 import AppBar from 'material-ui/AppBar';
@@ -69,10 +70,12 @@ class App extends Component {
   }
 }
 
-const mapDispatchToPropsActions = dispatch => ({
+App.propTypes = {
+  setCity: PropTypes.func.isRequired,
+}
+
+const mapDispatchToProps = dispatch => ({
   setCity: value => dispatch(setCity(value))
 });
 
-const AppConnected = connect(null, mapDispatchToPropsActions)(App);
-
-export default AppConnected;
+export default connect(null, mapDispatchToProps)(App);
