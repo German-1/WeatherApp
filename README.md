@@ -122,3 +122,7 @@ Te ayuda a escribir aplicaciones que se comportan de manera consistente, corren 
  * El estado es único y global (store)
 
  * El estado se modifica por acciones (action)
+
+## Funcion que retorna funciones
+
+## Entendiendo el Reducer
