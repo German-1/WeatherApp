@@ -141,3 +141,7 @@ Te ayuda a escribir aplicaciones que se comportan de manera consistente, corren 
 
 - Hacer copia
   {...state, prop: 'Nuevo valor'}
+
+### connect (1,2)(Comp)
+1. MapStateToProps (values)
+2. MapDispatchToProps (func)
